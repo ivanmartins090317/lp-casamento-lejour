@@ -1,24 +1,35 @@
-#corpo {display: block;position: relative;margin: 0 auto; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: 'Open Sans', sans-serif; color: #303030;overflow: hidden;}
+#corpo {display: block;position: relative;margin: 0 ; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: 'Open Sans', sans-serif; color: #303030;overflow: hidden;}
 a{text-decoration: none;}
+hr{width:60%; text-align: center;}
+.btn-primario{background:#0D0303; color:#FFFFFF; padding:3% 5%; border-radius:999px; cursor:pointer;}
 
 
 #corpo .banner_capa::before{     padding: 0;     padding-top: 39.0625%; }
-#corpo .banner_capa{position: relative;display: block;width: 100%; margin: 0 auto 4%;}
+#corpo .banner_capa{display: block;width: 100%; margin: 0 auto  4%;}
 #corpo .banner_capa picture{display: block;width: 100%;}
 #corpo .banner_capa picture img{position: relative;display: block;width: 100%;}
 #corpo #fast_rotativo picture img:hover{width: 100%;}
 
 /* texto do banner */
-#corpo .banner_capa .texto-banner{position: absolute; top: 5%; left: 5%;}
-#corpo .banner_capa .texto-banner a{background:#756b56; padding:3% 5%; border-radius:999px; margin-top:1%; color:#FFFFFF;}
+#corpo .banner_capa .texto-banner{height:92%;position: absolute; top: 50%; left: 5%; transform:translateY(-50%); }
+#corpo .banner_capa .texto-banner a{font-size:1vw;background:#756b56; padding:2% 5%; border-radius:999px; margin-top:1%; color:#FFFFFF;}
+#corpo .banner_capa .texto-banner h1,
+#corpo .banner_capa .texto-banner p{color:#FFFFFF;}
 
+#corpo .banner_capa .texto-banner h1{width:47%;font-size:4.5vw;font-weight:400; margin-bottom:0}
+#corpo .banner_capa .texto-banner p{width:46%; margin-bottom:10%}
 /* NAVEGAÇÃO NA PAGINA */
 .nav{ width: 100%;}
 .nav .botoes{display:flex; align-items:center; justify-content:center; gap:2%;}
-.nav .botoes a{color:#111111; padding:1% 3%;border: 1px solid #111111;border-radius:999px}
-.nav .botoes a.primario{background:#0D0303; color:#FFFFFF; }
+.nav .botoes a{color:#111111; padding:1% ;border: 1px solid #111111;border-radius:999px}
+.nav .botoes a.btn-primario{width:15%;display:flex; align-items:center;gap:7%;background:#0D0303; color:#FFFFFF; cursor:pointer; padding:1% 3%; }
 
 /* rotativo */
+#corpo .sugestoes::before{padding-top: 38%;}
+#corpo .sugestoes {position: relative; width: 100%;margin: 30px auto 0;}
+/* #corpo .sugestoes .botao_sugestao {position: absolute;top: 66%;left: 4%;font-size: 0.9vw;font-weight: 700; color: #FFFFFF;background-color: #303030;border: 1px solid #303030; padding: 0.6% 2.2%;border-radius: 50px;text-decoration: none;}
+#corpo .sugestoes .botao_sugestao:hover {color: #303030;border: 1px solid #303030; background-color: #FFFFFF;} */
+.sugestoes h2{width:46%;font-size:2.5vw;text-align: center; margin:0 auto 5%;}
 .fast_rotativo2 { position: relative; display: block; margin: 0 auto; width: 62%; max-width: 1600px; }
 
 .fast_rotativo2>picture { display: none !important; }
@@ -28,260 +39,68 @@ a{text-decoration: none;}
 .fast_rotativo2 picture img { display: block; width: 100%; margin: 0 auto; padding: 0; }
 .fast_rotativo2 picture a { position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; margin: 0; padding: 0; }
 
-.fast_rotativo2 .owl-nav { position: absolute; display: block; width: 100%; height: 0; left: 0; top: 40%; opacity: 1; 
+#corpo .sugestoes .fast_rotativo2 .owl-nav { position: absolute; display: block; width: 100%; height: 0; left: 0; top: 40%; opacity: 1; 
 -webkit-transition: opacity 0.3s; -moz-transition: opacity 0.3s; -o-transition: opacity 0.3s; transition: opacity 0.3s; }
-.fast_rotativo2:hover .owl-nav { opacity: 1; }
-.fast_rotativo2 .owl-nav .owl-prev img, .fast_rotativo2 .owl-nav .owl-next img { position: relative; display: block; width: 100%; margin: 0 auto; padding: 0; }
-.owl-carousel.fast_rotativo2 .owl-nav .owl-prev,.owl-carousel.fast_rotativo2 .owl-nav .owl-next { position: absolute; width: 3.4%; display: block; padding: 2% 0.6% !important; border: 1px solid #303030; border-radius: 50px; }
+#corpo .sugestoes .fast_rotativo2:hover .owl-nav { opacity: 1; }
+#corpo .sugestoes .fast_rotativo2 .owl-nav .owl-prev img, 
+#corpo .sugestoes .fast_rotativo2 .owl-nav .owl-next img { position: relative; display: block; width: 100%; margin: 0 auto; padding: 0; }
+ .owl-carousel.fast_rotativo2 .owl-nav .owl-prev,
+ .owl-carousel.fast_rotativo2 
+ .owl-nav .owl-next { position: absolute; width: 3.4%; display: block; padding: 2% 0.6% !important; border: 1px solid #303030; border-radius: 50px; }
 #corpo .fast_rotativo2 .owl-nav .owl-prev { left: -1.5%;padding: 0.8% 1.2% 0.8% 0.9% !important;}
 #corpo .fast_rotativo2 .owl-nav .owl-next { right: 0%;padding: 0.8% 0.9% 0.8% 1.2%!important; }
 
-/* sessão vai sair */
-#corpo .categories_filter::before{padding-top: 18%;}
-#corpo .categories_filter{ position: relative;margin: 0 auto; width: 90%;height: auto;}
+.sugestoes .container-botao{width:100%; margin:0 auto 5%; text-align:center;}
+.sugestoes a.btn-primario{background:#0D0303; color:#FFFFFF; padding:1% 2%; border-radius:999px; cursor:pointer; }
 
-#corpo .moldura{background-color: #FAFAFA;border-radius: 16px;}
-#corpo .moldura_texto{text-align: center;font-size: 1.1vw;font-weight: 600; font-family: 'Open Sans', sans-serif;margin: 10px;}
+/* rotativo marcas */
+#corpo .marcas::before{padding-top: 30%;}
+.marcas h2{font-weight:400; text-align:center;}
+#corpo .marcas .owl-nav, #corpo .marcas .owl-dots{display:none;}
+/* video yotube */
+#corpo .video{margin-top: 8%; position:relative}
+#corpo .video::before{ padding: 0; padding-top: 52.0625%;}
+.flex_wrapper { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
 
-#corpo .sugestoes::before{padding-top: 23%;}
-#corpo .sugestoes {position: relative; width: 100%;margin: 30px auto 0;}
-#corpo .sugestoes .botao_sugestao {position: absolute;top: 66%;left: 4%;font-size: 0.9vw;font-weight: 700; color: #FFFFFF;background-color: #303030;border: 1px solid #303030; padding: 0.6% 2.2%;border-radius: 50px;text-decoration: none;}
-#corpo .sugestoes .botao_sugestao:hover {color: #303030;border: 1px solid #303030; background-color: #FFFFFF;}
+.flex_wrapper .size_wrapper { width: 80%; /* Controls size of the video based on size of the parent */ margin-bottom: -15%; /* Or any other value as needed */ } 
+.flex_wrapper .size_wrapper .video_wrapper { position: relative; margin: 0 height: 0; width: 60%; padding-bottom: 56.25%; /* 16:9 */     }
+    
+.flex_wrapper .size_wrapper .video_wrapper .spot_video { margin: 0 auto 50px; width: 100%; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 16px; }
 
-#corpo .mosaico_essencial{position: relative; width: 90%;height: auto;margin: 30px auto;}
-#corpo .mosaico_essencial .texto_essencial{position: relative; width: 100%;height: auto;}
-#corpo .mosaico_essencial .texto_essencial h2{font-size: 1.5vw;color: #303030;font-weight: 600;}
-#corpo .mosaico_essencial .texto_essencial p {font-size: 1vw;color: #303030;}
+#corpo .video .texto-video{width:40%;position:absolute; top: 25%; right: 0; }
+#corpo .video .texto-video .botao a.btn-primario{background:#0D0303; color:#FFFFFF; padding:3% 5%; border-radius:999px; cursor:pointer;}
 
-#corpo .mosaico_essencial.finalize .texto_essencial h2{font-size: 1.5vw;color: #303030;font-weight: 600;}
-#corpo .mosaico_essencial.finalize .texto_essencial p {font-size: 0.9vw;color: #303030;width: 52%;}
-
-#corpo .sugestoes2 h2 {top: 10%;left: 70%;}
-#corpo .sugestoes2 p {top: 28%;left: 70%;width: 24%;color: #303030;}
-#corpo .sugestoes2 .botao_sugestao2{top: 66%;left: 69%;}
-#corpo .sugestoes2 .rotativo_sugestao2{margin: 0 0 0 5%;width: 62%;}
-#corpo .sugestoes2 .rotativo_sugestao2 .owl-dots{margin: 2% 0 0 1%;}
-
-
-/*-------------------------------------Mosaico Quick Filter-----------------------------------------------------*/
-/*---- Sessão retirada na LP dias das mães -----*/
-/* #fast_rotativo { position: relative; display: none; margin: 0 auto; width: 100%; max-width: 1600px; }
-
-#fast_rotativo>picture { display: none !important; }
-#fast_rotativo>picture:first-of-type { display: block !important; }
-
-#fast_rotativo picture { position: relative; display: inline-block; width: 94%; margin: 0 auto; padding: 0; }
-#fast_rotativo picture img { display: block; width: 96%;height: auto; margin: 0 auto; padding: 0;}
-#fast_rotativo picture a { position: absolute; display: block; left: 0; top: 0; width: 103%; height: 106%; margin: 0; padding: 0; }
-
-#fast_rotativo .owl-nav { position: absolute; display: block; width: 100%; height: 0; left: 0; top: 36%; opacity: 0; 
--webkit-transition: opacity 0.3s; -moz-transition: opacity 0.3s; -o-transition: opacity 0.3s; transition: opacity 0.3s; }
-#fast_rotativo:hover .owl-nav { opacity: 1; }
-#fast_rotativo .owl-nav .owl-prev img, #fast_rotativo .owl-nav .owl-next img { position: relative; display: block; width: 55%; margin: 0 auto; padding: 0; }
-#fast_rotativo .owl-nav .owl-prev, #fast_rotativo .owl-nav .owl-next { position: absolute; width: 3%; display: none; padding: 1.1% 0.9% 1% 1% !important; background-color: #aaaaaa; border-radius: 50px; }
-#fast_rotativo .owl-nav .owl-prev { left: 2.6%; }
-#fast_rotativo .owl-nav .owl-next { right: 2.6%; }
-#fast_rotativo .owl-dots { display: none; position: relative; margin: 1% auto; width: 100%; text-align: center; }
-#fast_rotativo .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
-#fast_rotativo .owl-dots .owl-dot span { display: block; outline: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
-#fast_rotativo .owl-dots .owl-dot:hover span, #fast_rotativo .owl-dots .owl-dot.active span { background-color: #8f8e8e; }
-
-#corpo .owl-item {position: relative;overflow: hidden;}
-#corpo .owl-item:hover .moldura img{transform: scale(1.1);transition: transform 0.4s ease;} */
-
-/*-----------------------------------MOsaico Modelo -- SugestÃµes-------------------------------------------------*/
+/* banner app */
+#corpo .banner_app::before{padding-top: 52%; }
+#corpo .banner_app picture img{position:relative}
+#corpo .banner_app .texto-banner-app{width:40%;position:absolute; top:31%; left:8%}
 
 
+/* imagem de como funciona */
+#corpo .banner_como_funciona::before{padding-top: 52%; }
+#corpo .banner_como_funciona{margin:5% auto 10%;}
+#corpo .banner_como_funciona .botao{width:100%;text-align: center}
 
-.fast_rotativo2 .owl-dots { display: block; position: relative; margin: 1% 0 0 86%; width: 12%; text-align: center; }
-.fast_rotativo2 .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
-.fast_rotativo2 .owl-dots .owl-dot span { display: block;border: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
-.fast_rotativo2 .owl-dots .owl-dot:hover span, .fast_rotativo2 .owl-dots .owl-dot.active span { background-color: #aaaaaa; }
+/* depoimentos */
+#corpo .depoimentos h2{text-align: center;}
+#corpo .depoimentos .cards-casais{display:flex; margin-top:15%}
+#corpo .depoimentos .cards-casais .card{width:25%; border: 1px solid #111; position: relative;padding:7% 3% 3% 3%; border-radius:10px;}
+#corpo .depoimentos .cards-casais .imagem-casal{position: absolute; bottom:81%; left:50%;  transform: translateX(-50%) }
+#corpo .depoimentos .cards-casais .text-casal{text-align: center}
+#corpo .depoimentos .cards-casais .text-casal h3{margin-top:40%}
 
+/* faq */
+.aniversario_faq { padding-bottom: 8rem;}
+#aniversario_sanfona_faq { width: 75%; margin: 0 auto;}
+.aniversario_faq #aniversario_sanfona_faq h2 {text-align: center;width: 100%;letter-spacing: 0.3vw;color: #050709;font-weight: 600;font-size: 25px;margin: 0px;padding: 50px 0px 30px;     font-family: Arial, Helvetica, sans-serif;}
+.aniversario_sanfona_item {position: relative; padding: 0.5rem; cursor: pointer; border-radius: 999px;     font-size: 1.3vw; color: #303030; border: 1px solid #30303030; }
+.aniversario_sanfona_item_ativo {border-radius:25px; }
+.aniversario_sanfona_titulo p{font-weight: bold; margin-left:3%;}
+.aniversario_sanfona_seta { position: absolute; width: 3%; right: 2%; top: 25%;transform: rotate(0deg);filter: grayscale(100%);}
+.aniversario_sanfona_conteudo { max-height: 0;overflow: hidden;transition: 200ms;}
+.aniversario_sanfona_conteudo p { width: 90%; line-height: 18pt;margin-top: 1vw; margin-left:3%;}
+.aniversario_sanfona_item_ativo .aniversario_sanfona_seta { transform: rotate(180deg);}
+.aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo{transition: max-height 500ms; max-height: 500px;} 
 
-
-
-
-/*------------------------------------Mosaico Modelo Essencial-------------------------------------------------------------*/      
-.highlight_mosaico_modelo::before{padding-top: 40%;}
-.highlight_mosaico_modelo { width: 100%; height:auto; position: relative; margin: 2% auto; display: block; max-width: 1600px; }
-.highlight_mosaico_modelo picture { display: block; position: relative; width: 100%; height: auto; padding: 0; }
-.highlight_mosaico_modelo img { display: block; position: relative; width: 100%; height: auto; margin: 0; padding: 0; }
-.highlight_mosaico_modelo  a, .highlight_mosaico_modelo .categories a { display: block; position: absolute; transition: background-color 200ms; }
-
-.highlight_mosaico_modelo .categories .banner1 {top: 0%;left: 0%;width: 32.6%;height: 100%;border-radius: 12px;}
-.highlight_mosaico_modelo .categories .banner2 {top: 0%;left: 33.7%;width: 66.2%;height: 47.3%;border-radius: 12px;}
-.highlight_mosaico_modelo .categories .banner3 {top: 50.2%;left: 33.7%;width: 66.2%;height: 49.8%;border-radius: 12px;}
-
-.finalize .highlight_mosaico_modelo .categories .banner1 {top: 0%;left: 0%;width: 49.5%;height: 100%;border-radius: 12px;}
-.finalize .highlight_mosaico_modelo .categories .banner2 {top: 0%;left: 50.5%;width: 49.2%;height: 50.2%;border-radius: 12px;}
-.finalize .highlight_mosaico_modelo .categories .banner3 {top: 53%;left: 50.5%;width: 49.2%;height: 47.1%;border-radius: 12px;}
-
-.highlight_mosaico_modelo a:hover, .highlight_mosaico_modelo .categories a:hover {background-color: rgba(0, 0, 0, 0.219);}
-                            /*-------Mosaico Rotativo Modelo Essencial------*/
-.fast_rotativo_header { position: relative; display: none; margin: 0 auto; width: 100%; max-width: 1600px; }
-
-.fast_rotativo_header>picture { display: none; }mosaico_essencial.finalize .texto_essencial p
-.fast_rotativo_header>picture:first-of-type { display: block !important; }
-
-.fast_rotativo_header picture { position: relative; display: inline-block; width: 100%; margin: 0 auto; padding: 0; }
-#corpo .fast_rotativo_header picture img { display: block; width: 97%; margin: 0 auto; padding: 0; border-radius: 16px;}
-.fast_rotativo_header picture a { position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; margin: 0; padding: 0; }
-
-.fast_rotativo_header .owl-nav { position: absolute; display: block; width: 100%; height: 0; left: 0; top: 36%; opacity: 0; 
--webkit-transition: opacity 0.3s; -moz-transition: opacity 0.3s; -o-transition: opacity 0.3s; transition: opacity 0.3s; }
-.fast_rotativo_header:hover .owl-nav { opacity: 1; }
-.fast_rotativo_header .owl-nav .owl-prev img, .fast_rotativo_header .owl-nav .owl-next img { position: relative; display: block; width: 55%; margin: 0 auto; padding: 0; }
-.fast_rotativo_header .owl-nav .owl-prev, .fast_rotativo_header .owl-nav .owl-next { position: absolute; width: 3%; display: block; padding: 1.1% 0.9% 1% 1% !important; background-color: #aaaaaa; border-radius: 50px; }
-.fast_rotativo_header .owl-nav .owl-prev { left: 2.6%; }
-.fast_rotativo_header .owl-nav .owl-next { right: 2.6%; }
-
-.fast_rotativo_header .owl-dots { display: block; position: relative; margin: 1% auto; width: 100%; text-align: center; }
-.fast_rotativo_header .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
-.fast_rotativo_header .owl-dots .owl-dot span { display: block; outline: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
-.fast_rotativo_header .owl-dots .owl-dot:hover span, .fast_rotativo_header .owl-dots .owl-dot.active span { background-color: #8f8e8e; }                            
-
-
-/*---------------Home faixa preÃ§o------------------*/
-#corpo .faixa_preco::before{padding-top:38.2178217822%;}
-#corpo .faixa_preco {display: block; position: relative;margin: 5% auto;width: 100%;}
-
-
-#corpo .faixa_preco img {position: relative;width: 90%;height: auto;margin: 0 5%;}
-
-#corpo .faixa_preco a{position: absolute;left: 9%; color: #363e37;  font-family: 'Open Sans', serif;font-weight: 400;text-transform: uppercase;letter-spacing: 0.2vw; font-size: 1.8vw; transition: color 0.3s ease, font-size 0.3s ease;}
-#corpo .faixa_preco a:nth-of-type(1) {top: 35%;}
-#corpo .faixa_preco a:nth-of-type(2) {top: 47%;}
-#corpo .faixa_preco a:nth-of-type(3) {top: 59%;}
-#corpo .faixa_preco a:nth-of-type(4) {top: 71%;}
-#corpo .faixa_preco a:hover {font-weight: 700;color: #303030;font-size: 2vw;}
-#corpo .faixa_preco p{ position: absolute; left: 9%;
-    top: 3%;
-    font-size: 2.3vw; font-weight: 700;}
-#corpo .faixa_preco span{position: absolute;left: 9%;
-    top: 18%;
-    font-size: 2.3vw; }
-
-/* ----Responsividade media query---- */
-
-@media screen and (min-width: 1601px) {
-    #corpo .faixa_preco a {font-size: 32px;}
-}
-@media screen and (min-width: 1600px) { 
-.highlight_mosaico_modelo img { display: block; position: relative; width: 100%; height: auto; margin: 0 auto; padding: 0; }
-
-#corpo .sugestoes h2{font-size: 22px;}
-#corpo .sugestoes p {font-size: 18px;}
-#corpo .sugestoes .botao_sugestao{font-size: 20px;}
-}
-
-
-@media screen and (max-width: 1100px) {
-    .fast_rotativo2 {margin: 0 auto;width: 98%;}
-    .fast_rotativo2 .owl-nav { display: none; }
-    .fast_rotativo2 .owl-dots{margin: 3% auto 0;width: 24%;}
-    .fast_rotativo2 .owl-dots .owl-dot span { width: 2vw; height: 2vw; margin: 1vw; }
-    .fast_rotativo2 .owl-dots .owl-dot:hover span, .fast_rotativo2 .owl-dots .owl-dot.active span{border: 1px solid #aaaaaa;}
-
-    #corpo .sugestoes2 .rotativo_sugestao2{margin: 0 auto;width: 92%;}
-    #corpo .sugestoes2 .rotativo_sugestao2 .owl-dots {margin: 3% auto 0;}
-    #corpo .sugestoes .botao_sugestao{margin: 0 auto;top: 80%;left: 6%;font-size: 3vw;padding: 3% 35%;}
-
-#corpo .banner_capa::before{
-    padding-top: 151.0256410256%;
-}
-#corpo .banner_capa{margin-bottom: 10%;}
-
-
-/*-------------------------------------Mosaico Quick Filter-----------------------------------------------------*/
-/* ---Sessão retirada na LP dias das mãe ----*/
-/* #corpo .categories_filter::before{padding-top: 48%;}
-#corpo .categories_filter{width: 96%;}
-#corpo .categories_filter .moldura_texto {text-align: center;width: 66%;font-size: 3vw;margin: 8% -4%;}
-#fast_rotativo picture{width: 32.5vw;}
-#fast_rotativo picture img {border-radius: 0px;}
-#fast_rotativo .owl-nav { display: none; }
-
-#fast_rotativo .owl-dots .owl-dot span {display: block; width: 3vw; height: 3vw; margin: 1vw; } */
-/* #fast_rotativo .button_categories a{display: block;text-decoration: none;font-family: 'Open Sans', serif;font-weight: 900;border-radius: 64px;padding: 10px 2px;font-size: 3vw;text-align: center;margin: 8px 4px 0 0;box-sizing: border-box;background-color: #000000;color: #fff;border: none;cursor: pointer;} */
-/*----------------------------------------------FIM--------------------------------------------------------------*/
-
-/*----------------------------------------------Rotativo Sugestoes-----------------------------------------*/
-#corpo .sugestoes::before{
-    padding-top: 80%;
-}
-#corpo .sugestoes{margin: 30px auto;}
-#corpo .sugestoes h2{position: relative;text-align: center;font-size: 4vw;font-weight: 600;margin: 0;padding: 0;left: auto;top: auto;}
-#corpo .sugestoes p {position: relative;font-size: 3.5vw;text-align: center;width: 100%;top: auto;left: auto; margin-bottom:9%}
-#corpo .sugestoes .botao_sugestao{margin: 0 auto;top: 80%;left: 6%;font-size: 3vw;padding: 3% 35%;;}
-
-/*------------------------------------------Mosaico Essencial----------------------------------*/
-#corpo .mosaico_essencial{margin: 30px auto;width: 100%;}
-#corpo .mosaico_essencial .texto_essencial{margin: 0 auto 30px;}
-#corpo .mosaico_essencial .texto_essencial h2{font-size: 4.4vw;text-align: center;}
-#corpo .mosaico_essencial .texto_essencial p{font-size: 3.5vw;text-align: center;padding: 0 3%; margin: 0;}
-
-
-#corpo .mosaico_essencial.finalize .texto_essencial h2{font-size: 4.2vw;}
-#corpo .mosaico_essencial.finalize .texto_essencial p {font-size: 3.5vw;width: 93%;margin-bottom:11%;text-align: center;}
-
-/*-------------------------------------Mosaico Rotativo Mobile------------------------------------------*/
-
-.fast_rotativo_header {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1600px;
-}
-.highlight_mosaico_modelo{display: none;}
-
-.modelo-Mobile1::before {padding-top: 100%;}
-
-.fast_rotativo_header picture img {border-radius: 0px;}
-.fast_rotativo_header .owl-nav { display: none; }
-.fast_rotativo_header .owl-dots .owl-dot span {display: none; width: 3vw; height: 3vw; margin: 1vw; }
-.fast_rotativo_header .button_categories a{display: block;text-decoration: none;font-family: 'Open Sans', serif;font-weight: 900;border-radius: 64px;padding: 10px 2px;font-size: 3vw;text-align: center;margin: 8px 4px 0 0;box-sizing: border-box;background-color: #000000;color: #fff;border: none;cursor: pointer;}
-
-/* ---faixa preco--- */
-  #corpo .faixa_preco::before{padding-top: 72%}
-
-  #corpo .faixa_preco img{
-    width:109%;
-    height:auto;
-    margin: 0;
-  }
-   #corpo .faixa_preco p {
-    position: absolute;
-    left: 5%;
-    top: -2%;
-    font-size: 3.5vw;
-}
-   #corpo .faixa_preco span {
-    position: absolute;
-    left: 5%;
-    top: 11%;
-    font-size: 3.5vw;
-}
- 
-    #corpo .capa_natal .bannerNatal1 {top: 24.7%;left: 2.2%;width: 94%;height: 23.3%;}
-    #corpo .capa_natal .bannerNatal2 {top: 50.6%;left: 2.4%;width: 93.8%;height: 23.3%;}
-    #corpo .capa_natal .bannerNatal3 {top: 76.7%;left: 2.2%;width: 94.2%;height: 23.2%;}
-
-    #corpo .faixa_preco a{left: 5%;font-size: 3.3vw;}
-    #corpo .faixa_preco a:nth-of-type(1) {top: 34%;}
-    #corpo .faixa_preco a:nth-of-type(2) {top: 46%;}
-    #corpo .faixa_preco a:nth-of-type(3) {top: 58%;}
-    #corpo .faixa_preco a:nth-of-type(4) {top: 70%;}
-    #corpo .faixa_preco a:hover {font-weight: 700;color: #303030;font-size: 3.5vw;}     
-
-  
-
-}
-   
-
-
-/*------------------ FIM faixa preÃ§o---------------------*/
-
-
-
+.link-ver-mais{ text-align: center; margin-top:3%}
+.link-ver-mais a{font-weight:bold; cursor:pointer;}

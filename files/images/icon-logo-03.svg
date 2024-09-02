@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="225" height="225" viewBox="0 0 225 225">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_5138" data-name="Retângulo 5138" width="200" height="74" transform="translate(-0.399)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_12475" data-name="Grupo 12475" transform="translate(2462 -1167)">
+    <rect id="Retângulo_5150" data-name="Retângulo 5150" width="225" height="225" transform="translate(-2462 1167)" fill="#fff"/>
+    <g id="Grupo_de_máscara_6" data-name="Grupo de máscara 6" transform="translate(-2448.601 1243)" clip-path="url(#clip-path)">
+      <g id="lg-1" transform="translate(63.26 0)">
+        <path id="Caminho_19413" data-name="Caminho 19413" d="M0,0H73.509V73.509H0Z" fill="#fff" fill-rule="evenodd"/>
+        <path id="Caminho_19414" data-name="Caminho 19414" d="M23.126,21.464a21.584,21.584,0,1,0,21.57,21.6,21.6,21.6,0,0,0-21.57-21.6Zm-7.943,11.1a2.6,2.6,0,1,1-2.611,2.584A2.6,2.6,0,0,1,15.184,32.561Zm10.173,20.89H22.311V33.106h2.013V51.412H28.4v2.04H25.357Zm0,6.446A17,17,0,0,0,39.963,45.1H28.4V42.979h13.41a18.832,18.832,0,0,1-16.456,18.66,20.316,20.316,0,0,1-2.231.109,18.69,18.69,0,0,1-7.943-35.632,19.266,19.266,0,0,1,7.534-1.768v1.741a16.761,16.761,0,0,0-7.534,1.958,16.973,16.973,0,0,0,7.943,31.987,20.546,20.546,0,0,0,2.231-.136ZM46.138,51.14v-14.8h4.869V47.685h6.664V51.14H46.138Zm26.738.054H69.721l-.164-1.469a5.519,5.519,0,0,1-4.488,1.822c-3.781,0-7.181-2.448-7.181-7.616,0-4.733,2.965-7.969,7.779-7.969,3.563,0,6.42,1.85,7.018,5.495H68.061a2.414,2.414,0,0,0-2.5-1.877c-1.9,0-2.8,1.741-2.8,4.325,0,2.094.653,4.026,3.1,4.026a2.656,2.656,0,0,0,2.5-1.714H66.212V43.033h6.664v8.161h0Z" transform="translate(-0.448 -6.293)" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
