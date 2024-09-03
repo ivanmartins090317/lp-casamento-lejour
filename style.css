@@ -17,7 +17,7 @@ hr{width:60%; text-align: center;}
 
 /* texto do banner */
 #corpo .banner_capa .texto-banner{height:70%;position: absolute; top: 13%; left: 9%;  }
-#corpo .banner_capa .texto-banner a{font-size:0.8vw;background:#756b56; padding:2% 4%; border-radius:999px; margin-top:1%; color:#FFFFFF;}
+#corpo .banner_capa .texto-banner a{font-size:0.8vw;background:#ffffff36; padding:2% 4%; border-radius:999px; margin-top:1%; color:#FFFFFF;}
 #corpo .banner_capa .texto-banner h1,
 #corpo .banner_capa .texto-banner p{color:#FFFFFF;}
 
