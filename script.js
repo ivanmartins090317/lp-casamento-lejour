@@ -45,17 +45,17 @@
         })(jQuery);
 
             (function($) { 
-             $('.marcas').owlCarousel({
+             $('.fast_marcas').owlCarousel({
             items: 1,
             loop: true,
-            smartSpeed: 600,
+            smartSpeed: 10000,
             responsiveClass: true,
             nav: false,
             // navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
-            responsive:{ 0:{ items: 7.5, margin: 0 } },
+            responsive:{ 0:{ items: 5.5, margin: 0 } },
             slideBy: 3,
             autoplay: true,
-            autoplayTimeout: 20000,
+            autoplayTimeout: 1000,
             autoplayHoverPause: true
         });
         })(jQuery);
