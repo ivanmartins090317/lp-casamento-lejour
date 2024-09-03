@@ -36,7 +36,7 @@
             responsiveClass: true,
             nav: true,
             navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
-            responsive:{ 0:{ items: 3, margin: 4 } },
+            responsive:{ 0:{ items: 3.5, margin: 4 } },
             slideBy: 3,
             autoplay: true,
             autoplayTimeout: 20000,

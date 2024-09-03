@@ -25,7 +25,7 @@ hr{width:60%; text-align: center;}
 .nav .botoes a.btn-primario{width:15%;display:flex; align-items:center;gap:7%;background:#0D0303; color:#FFFFFF; cursor:pointer; padding:1% 3%; }
 
 /* rotativo */
-#corpo .sugestoes::before{padding-top: 38%;}
+#corpo .sugestoes::before{padding-top: 47%;}
 #corpo .sugestoes {position: relative; width: 100%;margin: 30px auto 0;}
 /* #corpo .sugestoes .botao_sugestao {position: absolute;top: 66%;left: 4%;font-size: 0.9vw;font-weight: 700; color: #FFFFFF;background-color: #303030;border: 1px solid #303030; padding: 0.6% 2.2%;border-radius: 50px;text-decoration: none;}
 #corpo .sugestoes .botao_sugestao:hover {color: #303030;border: 1px solid #303030; background-color: #FFFFFF;} */
@@ -47,8 +47,8 @@ hr{width:60%; text-align: center;}
  .owl-carousel.fast_rotativo2 .owl-nav .owl-prev,
  .owl-carousel.fast_rotativo2 
  .owl-nav .owl-next { position: absolute; width: 3.4%; display: block; padding: 2% 0.6% !important; border: 1px solid #303030; border-radius: 50px; }
-#corpo .fast_rotativo2 .owl-nav .owl-prev { left: -1.5%;padding: 0.8% 1.2% 0.8% 0.9% !important;}
-#corpo .fast_rotativo2 .owl-nav .owl-next { right: 0%;padding: 0.8% 0.9% 0.8% 1.2%!important; }
+#corpo .fast_rotativo2 .owl-nav .owl-prev { left: -6.5%;padding: 0.8% 1.2% 0.8% 0.9% !important;}
+#corpo .fast_rotativo2 .owl-nav .owl-next { right: -6.5%;padding: 0.8% 0.9% 0.8% 1.2%!important; }
 
 .sugestoes .container-botao{width:100%; margin:0 auto 5%; text-align:center;}
 .sugestoes a.btn-primario{background:#0D0303; color:#FFFFFF; padding:1% 2%; border-radius:999px; cursor:pointer; }
@@ -80,10 +80,11 @@ hr{width:60%; text-align: center;}
 #corpo .banner_como_funciona::before{padding-top: 52%; }
 #corpo .banner_como_funciona{margin:5% auto 10%;}
 #corpo .banner_como_funciona .botao{width:100%;text-align: center}
-
+#corpo .banner_como_funciona picture{width:80%; margin:0 auto;}
 /* depoimentos */
+#corpo .depoimentos{width:90%; margin:0 auto;}
 #corpo .depoimentos h2{text-align: center;}
-#corpo .depoimentos .cards-casais{display:flex; margin-top:15%}
+#corpo .depoimentos .cards-casais{display:flex; margin-top:15%; gap:3%;}
 #corpo .depoimentos .cards-casais .card{width:25%; border: 1px solid #111; position: relative;padding:7% 3% 3% 3%; border-radius:10px;}
 #corpo .depoimentos .cards-casais .imagem-casal{position: absolute; bottom:81%; left:50%;  transform: translateX(-50%) }
 #corpo .depoimentos .cards-casais .text-casal{text-align: center}
