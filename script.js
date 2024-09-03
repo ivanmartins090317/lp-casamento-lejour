@@ -46,9 +46,9 @@
 
             (function($) { 
              $('.fast_marcas').owlCarousel({
-            items: 1,
+            items: 0,
             loop: true,
-            smartSpeed: 10000,
+            smartSpeed: 16000,
             responsiveClass: true,
             nav: false,
             // navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
@@ -81,6 +81,20 @@
             console.log("close")
         }
     });
+
+
+// Seleciona todos os links que apontam para âncoras na página
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Previne o comportamento padrão
+
+        // Anima a rolagem até o elemento alvo da âncora
+        window.scrollTo({
+            top: document.querySelector(this.getAttribute('href')).offsetTop,
+            behavior: 'smooth' // Define o comportamento de rolagem suave
+        });
+    });
+});
 
 
 

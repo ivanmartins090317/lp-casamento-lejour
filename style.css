@@ -1,13 +1,18 @@
 #corpo {display: block;position: relative;margin: 0 auto ; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: 'Open Sans', sans-serif; color: #303030;overflow: hidden;}
+html { scroll-behavior: smooth;}
+
 a{text-decoration: none;}
 hr{width:60%; text-align: center;}
 .btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:3% 5%; border-radius:999px; cursor:pointer;}
 
-
-#corpo .banner_capa::before{     padding: 0;     padding-top: 39.0625%; }
+/* BARRA COM LOGO FAST E LEJOUR */
+#corpo .logo-fast-lejour{width:100%;margin:0 auto; text-align:center; padding:1%;}
+#corpo .logo-fast-lejour img{width:10%;}
+/* BANNER TOPO */
+#corpo .banner_capa::before{padding-top: 31.0625%; }
 #corpo .banner_capa{display: block;width: 100%; margin: 0 auto;}
-#corpo .banner_capa picture{display: block;width: 100%;}
-#corpo .banner_capa picture img{position: relative;display: block;width: 100%;}
+#corpo .banner_capa picture{display: block;width: 100%; height: 79%;}
+#corpo .banner_capa picture img{position: relative;display: block;width: 100%; height: 120%;}
 #corpo #fast_rotativo picture img:hover{width: 100%;}
 
 /* texto do banner */
@@ -16,18 +21,18 @@ hr{width:60%; text-align: center;}
 #corpo .banner_capa .texto-banner h1,
 #corpo .banner_capa .texto-banner p{color:#FFFFFF;}
 
-#corpo .banner_capa .texto-banner h1{width:47%;font-size:4.5vw;font-weight:400; margin-bottom:0; line-height:4vw;}
-#corpo .banner_capa .texto-banner p{width:61%; margin-bottom:5%; font-size:1.8vw;}
+#corpo .banner_capa .texto-banner h1{width:47%;font-size:3.5vw;font-weight:400; margin-bottom:0; line-height:4vw;}
+#corpo .banner_capa .texto-banner p{width:61%; margin-bottom:8%; font-size:1.2vw;}
 /* NAVEGAÇÃO NA PAGINA */
-.nav{ width: 100%;}
-.nav .botoes{display:flex; align-items:center; justify-content:center; gap:2%;}
+.nav{ width: 100%; margin-top:1%;}
+.nav .botoes{display:flex; align-items:center; justify-content:center; gap:1.5%;}
 .nav .botoes a{color:#111111; font-size:1vw;padding:0.5% 1% ;border: 1px solid #111111;border-radius:999px}
 .nav .botoes a.btn-primario{font-size:0.9vw;display:flex; align-items:center;justify-content:center;gap:7%;background:#0D0303; color:#FFFFFF; cursor:pointer; font-weight:bold;}
 .nav .botoes a.btn-primario img{width:10%;}
 /* rotativo */
-#corpo .sugestoes::before{padding-top: 44%;}
+#corpo .sugestoes::before{padding-top: 41%;}
 #corpo .sugestoes {position: relative; width: 100%;margin: 30px auto 0;}
-.sugestoes h2{width:46%;font-size:2.5vw;text-align: center; margin:0 auto 5%;}
+.sugestoes h2{width:46%;font-size:2.2vw;text-align: center; margin:0 auto 5%;}
 .sugestoes .texto-solucoes h3{font-size:1vw;}
 .sugestoes .texto-solucoes p{font-size:1vw;}
 
@@ -36,7 +41,7 @@ hr{width:60%; text-align: center;}
 .fast_rotativo2>picture { display: none !important; }
 .fast_rotativo2>picture:first-of-type { display: block !important; }
 
-.fast_rotativo2 picture { position: relative; display: inline-block; width: 96%; margin: 0 auto; padding: 0; }
+.fast_rotativo2 picture { position: relative; display: inline-block; width: 70%; margin: 0 auto; padding: 0; }
 .fast_rotativo2 picture img { display: block; width: 100%; margin: 0 auto; padding: 0; }
 .fast_rotativo2 picture a { position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; margin: 0; padding: 0; }
 
@@ -47,16 +52,16 @@ hr{width:60%; text-align: center;}
 #corpo .sugestoes .fast_rotativo2 .owl-nav .owl-next img { position: relative; display: block; width: 100%; margin: 0 auto; padding: 0; }
  .owl-carousel.fast_rotativo2 .owl-nav .owl-prev,
  .owl-carousel.fast_rotativo2 
- .owl-nav .owl-next { position: absolute; width: 3.4%; display: block; padding: 2% 0.6% !important; border: 1px solid #303030; border-radius: 50px; }
+ .owl-nav .owl-next { position: absolute; width: 2.9%; display: block; padding: 2% 0.6% !important; border: 1px solid #303030; border-radius: 50px; }
 #corpo .fast_rotativo2 .owl-nav .owl-prev { left: -6.5%;padding: 0.8% 1.2% 0.8% 0.9% !important;}
 #corpo .fast_rotativo2 .owl-nav .owl-next { right: -6.5%;padding: 0.8% 0.9% 0.8% 1.2%!important; }
 
- .container-botao{width:100%; margin:5% auto 5%; text-align:center;}
- a.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:1% 2%; border-radius:999px; cursor:pointer; }
+ .container-botao-sugestao{width:100%; margin:4% auto 7%; text-align:center;}
+ a.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:1% 2%; border-radius:999px; cursor:pointer; font-weight: 600;}
 
 /* rotativo marcas */
 #corpo .marcas::before{padding-top: 23%;}
-.marcas h2{font-weight:400;font-size:1.8vw; text-align:center;}
+.marcas h2{font-weight:400;font-size:1.5vw; text-align:center;}
 #corpo .marcas .owl-nav, #corpo .marcas .owl-dots{display:none;}
 
 .fast_marcas { position: relative; display: block; margin: 0 auto; width: 80%; max-width: 1600px; }
@@ -73,7 +78,7 @@ hr{width:60%; text-align: center;}
 
 #corpo .video .texto-video{width:40%;position:absolute; top: 17%; right: 2%; }
 #corpo .video .texto-video h2{width:71%;margin-bottom:10%;}
-#corpo .video .texto-video .botao a.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:2% 3%; border-radius:999px; cursor:pointer;}
+#corpo .video .texto-video .botao a.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:2% 3%; border-radius:999px; cursor:pointer; font-weight: 600;}
 
 /* banner app */
 #corpo .banner_app::before{padding-top: 52%; }
@@ -81,7 +86,7 @@ hr{width:60%; text-align: center;}
 #corpo .banner_app picture img{position:relative}
 #corpo .banner_app .texto-banner-app{width:40%;position:absolute; top:31%; left:8%}
 #corpo .banner_app .texto-banner-app h2{width:81%;font-size:1.7vw;}
-#corpo .banner_app .texto-banner-app p{font-size:1.7vw;}
+#corpo .banner_app .texto-banner-app p{font-size:1.45vw;}
 #corpo .banner_app  .links-app{display:flex; gap:2%;}
 #corpo .banner_app  .links-app img{width:30%; position:relative;}
 #corpo .banner_app  .links-app a{width:30%; height:22%; background:transparent; position:absolute; cursor:pointer;}
@@ -92,17 +97,17 @@ hr{width:60%; text-align: center;}
 #corpo .banner_como_funciona h2{font-size:2vw; text-align:center;margin-bottom:5%;}
 #corpo .banner_como_funciona picture{width:65%; margin:0 auto;}
 #corpo  .container-botao{width:100%;font-size:1vw;margin:7% auto 10%; text-align:center;}
-#corpo  .container-botao .btn-primario{font-size:0.8vw;}
+#corpo  .container-botao .btn-primario{font-size:0.8vw; font-weight: 600;}
 /* depoimentos */
 #corpo .depoimentos{width:90%; margin:0 auto;}
 #corpo .depoimentos h2{width:42%;font-size:2.5vw;text-align: center;margin:0 auto;}
-#corpo .depoimentos .cards-casais{display:flex;justify-content:space-around; margin-top:15%; gap:5%;}
-#corpo .depoimentos .cards-casais .card{width:21%; border: 1px solid #111; position: relative;padding:5% 2% 1% 2%; border-radius:10px;}
-#corpo .depoimentos .cards-casais .imagem-casal{position: absolute; bottom:90%; left:34%; }
-#corpo .depoimentos .cards-casais .imagem-casal img{width:60%;}
+#corpo .depoimentos .cards-casais{display:flex;justify-content:space-around; margin-top:12%; gap:5%;}
+#corpo .depoimentos .cards-casais .card{width:21%; border: 1px solid #111; position: relative;padding:3% 2% 1% 2%; border-radius:10px;}
+#corpo .depoimentos .cards-casais .imagem-casal{position: absolute; bottom:90%; left:32%; }
+#corpo .depoimentos .cards-casais .imagem-casal img{width:51%;}
 #corpo .depoimentos .cards-casais .text-casal{text-align: center}
 #corpo .depoimentos .cards-casais .text-casal h3{font-size:1.5vw;}
-#corpo .depoimentos .cards-casais .text-casal p{font-size:1vw;}
+#corpo .depoimentos .cards-casais .text-casal p{font-size:0.92vw;}
 
 /* faq */
 .aniversario_faq { padding-bottom: 8rem;}
@@ -119,3 +124,10 @@ hr{width:60%; text-align: center;}
 
 .link-ver-mais{ text-align: center; margin-top:3%}
 .link-ver-mais a{font-weight:bold; cursor:pointer; color:#303030;}
+
+
+@media (min-width:1600px){
+  .nav .botoes a.btn-primario {width:12%;padding:0.5% 2%;}
+  #corpo .sugestoes::before{padding-top:46%;}
+  #corpo .depoimentos h2{width:49%;}
+}
