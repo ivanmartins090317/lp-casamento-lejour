@@ -118,4 +118,4 @@ hr{width:60%; text-align: center;}
 .aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo{transition: max-height 500ms; max-height: 500px;} 
 
 .link-ver-mais{ text-align: center; margin-top:3%}
-.link-ver-mais a{font-weight:bold; cursor:pointer;}
+.link-ver-mais a{font-weight:bold; cursor:pointer; color:#303030;}
