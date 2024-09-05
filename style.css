@@ -2,7 +2,7 @@
 html { scroll-behavior: smooth;}
 
 a{text-decoration: none;}
-hr{width:60%; text-align: center;}
+hr{width:40%; text-align: center;}
 .btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:3% 5%; border-radius:999px; cursor:pointer;}
 
 /* BARRA COM LOGO FAST E LEJOUR */
@@ -81,16 +81,19 @@ hr{width:60%; text-align: center;}
 #corpo .video .texto-video .botao a.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:2% 3%; border-radius:999px; cursor:pointer; font-weight: 600;}
 
 /* banner app */
-#corpo .banner_app::before{padding-top: 52%; }
+#corpo .banner_app::before{padding-top: 27%; }
 #corpo .banner_app{margin-top:5%;}
-#corpo .banner_app picture img{position:relative}
-#corpo .banner_app .texto-banner-app{width:40%;position:absolute; top:31%; left:8%}
+#corpo .banner_app picture{width:50%;}
+#corpo .banner_app picture img{width:75%; position:absolute;top:0%; left:50vw;  z-index:1;}
+#corpo .banner_app .texto-banner-app{width:40%;position:absolute; top:16%; left:8%}
 #corpo .banner_app .texto-banner-app h2{width:81%;font-size:1.7vw;}
 #corpo .banner_app .texto-banner-app p{font-size:1.45vw;}
+#corpo .banner_app .background{width: 100%; height:20vw; background:#F2E4DC;position:absolute; top:4vw;}
 #corpo .banner_app  .links-app{display:flex; gap:2%;}
-#corpo .banner_app  .links-app img{width:30%; position:relative;}
-#corpo .banner_app  .links-app a{width:30%; height:22%; background:transparent; position:absolute; cursor:pointer;}
-#corpo .banner_app  .links-app a.google-play{left:32%}
+#corpo .banner_app  .links-app img{width:24%; position:relative;}
+#corpo .banner_app  .links-app a{width:23%; height:22%; background:transparent; position:absolute; cursor:pointer;}
+#corpo .banner_app  .links-app a.google-play{left:26%}
+#corpo .banner_app .barra-divisao{margin-top:5%}
 /* imagem de como funciona */
 #corpo .banner_como_funciona::before{padding-top: 36%; }
 #corpo .banner_como_funciona{margin:5% auto 0%;}
@@ -112,8 +115,8 @@ hr{width:60%; text-align: center;}
 /* faq */
 .aniversario_faq { padding-bottom: 8rem;}
 #aniversario_sanfona_faq { width: 60%; margin: 0 auto;}
-.aniversario_faq #aniversario_sanfona_faq h2 {text-align: center;width: 100%;letter-spacing: 0.3vw;color: #050709;font-weight: 600;font-size: 2.5vw;margin: 5%;padding: 50px 0px 30px;     font-family: Arial, Helvetica, sans-serif;}
-.aniversario_sanfona_item {position: relative; cursor: pointer; border-radius: 999px;     font-size: 1.3vw; color: #303030; border: 1px solid #30303030; }
+.aniversario_faq #aniversario_sanfona_faq h2 {text-align: center;width: 100%;letter-spacing: 0.3vw;color: #050709;font-weight: 600;font-size: 2vw;margin: 5% auto 0;padding: 50px 0px 30px;     font-family: Arial, Helvetica, sans-serif;}
+.aniversario_sanfona_item {position: relative; cursor: pointer; border-radius: 999px;     font-size: 1.3vw; color: #303030; border: 1px solid #30303030; margin:-1%; }
 .aniversario_sanfona_item_ativo {border-radius:25px; }
 .aniversario_sanfona_titulo p{font-size:0.9vw;font-weight: bold; margin-left:3%;}
 .aniversario_sanfona_seta { position: absolute; width: 3%; right: 2%; top: 25%;transform: rotate(0deg);filter: grayscale(100%);}
