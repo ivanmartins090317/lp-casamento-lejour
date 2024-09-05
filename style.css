@@ -14,7 +14,7 @@ hr{width:40%; text-align: center;}
 #corpo .banner_capa picture{display: block;width: 100%; height: 79%;}
 #corpo .banner_capa picture img{position: relative;display: block;width: 100%; height: 120%;}
 #corpo #fast_rotativo picture img:hover{width: 100%;}
-
+#corpo .banner_capa .texto-banner .acesso-mobile{display:none;}
 /* texto do banner */
 #corpo .banner_capa .texto-banner{height:70%;position: absolute; top: 13%; left: 9%;  }
 #corpo .banner_capa .texto-banner a{font-size:0.8vw;background:#ffffff36; padding:2% 4%; border-radius:999px; margin-top:1%; color:#FFFFFF;}
@@ -133,4 +133,19 @@ hr{width:40%; text-align: center;}
   .nav .botoes a.btn-primario {width:12%;padding:0.5% 2%;}
   #corpo .sugestoes::before{padding-top:46%;}
   #corpo .depoimentos h2{width:49%;}
+}
+
+@media(max-width:1100px){
+/* BANNER TOPO */
+#corpo .banner_capa::before{padding-top:88.0625%;}
+ #corpo .banner_capa picture { display: block;width: 100%;}
+ #corpo .banner_capa picture img{width:100%; height:auto;}
+ #corpo .banner_capa .texto-banner {top:45%;}
+ #corpo .banner_capa .texto-banner h1 {font-size:7.5vw; line-height:7vw;}
+ #corpo .banner_capa .texto-banner p{width:64%;font-size:2.8vw}
+ #corpo .banner_capa .texto-banner a{font-size:1.5vw;}
+
+ #corpo .banner_capa .texto-banner .botoes-banner{display:flex;gap:4%}
+ #corpo .banner_capa .texto-banner .acesso-mobile{display:flex;gap:7%;background:#ffffff36;padding:2%4%;border-radius:999px;    margin-top: 1%;    color: #FFFFFF; }
+ #corpo .banner_capa .texto-banner .acesso-mobile img{width:10%;}
 }
