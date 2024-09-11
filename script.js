@@ -36,23 +36,40 @@
             responsiveClass: true,
             nav: true,
             navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
-            responsive:{ 0:{ items: 3.5, margin: 4 } },
+            responsive:{ 0:{items: 1.5, margin: 0}, 1100:{ items: 3.5, margin: 4 } },
             slideBy: 3,
             autoplay: true,
             autoplayTimeout: 20000,
             autoplayHoverPause: true
         });
         })(jQuery);
-
+        //  ROTATIVO DE MARCAS
             (function($) { 
              $('.fast_marcas').owlCarousel({
             items: 0,
             loop: true,
-            smartSpeed: 16000,
+            smartSpeed: 6000,
             responsiveClass: true,
             nav: false,
             // navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
-            responsive:{ 0:{ items: 5.5, margin: 0 } },
+            responsive:{ 0:{items: 1.5, margin: 0}, 1100:{ items: 5.5, margin: 4 } },
+            slideBy: 3,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        })(jQuery);
+
+    // ROTATIVO DE DEPOIMENTOS
+    (function($) { 
+             $('.fast_depoimentos').owlCarousel({
+            items: 0,
+            loop: true,
+            smartSpeed: 1000,
+            responsiveClass: true,
+            nav: false,
+            // navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+            responsive:{ 0:{items: 1.1, margin: 0}, 1100:{ items: 2.5, margin: 4, autoplay: false, mouseDrag: false } },
             slideBy: 3,
             autoplay: true,
             autoplayTimeout: 1000,
@@ -61,6 +78,7 @@
         })(jQuery);
 
 
+    // FAQ
         $('.aniversario_sanfona_item').click(function() {
         console.log("click:")
         var alvo = '#' + $(this).attr('id');

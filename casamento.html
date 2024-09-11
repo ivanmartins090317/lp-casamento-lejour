@@ -14,28 +14,303 @@
 
 
 <!-- LINK LOCAL CSS -->
-<link rel="stylesheet" href="style.css">
+
+<style>
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('https://fastshopwr-a.akamaihd.net/pages/2022/JDDpais_v2/fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+    }
+  @font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('https://fastshopwr-a.akamaihd.net/pages/2022/JDDpais_v2/fonts/MYRIADPRO-BOLD.OTF') format('opentype');
+    }
+
+#corpo {display: block;position: relative;margin: 0 auto ; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: 'Open Sans', sans-serif; color: #303030;overflow: hidden;}
+
+html { scroll-behavior: smooth;}
+
+a{text-decoration: none;}
+hr{width:40%; text-align: center;}
+.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:3% 5%; border-radius:999px; cursor:pointer;}
+
+/* BARRA COM LOGO FAST E LEJOUR */
+#corpo .logo-fast-lejour{width:100%;margin:0 auto; text-align:center; padding:1%;}
+#corpo .logo-fast-lejour img{width:10%;}
+/* BANNER TOPO */
+#corpo .banner_capa::before{padding-top: 37.0625%; }
+#corpo .banner_capa{display: block;width: 100%; margin: 0 auto;}
+#corpo .banner_capa picture{display: block;width: 100%; height: 79%;}
+#corpo .banner_capa picture img{position: relative;display: block;width: 100%;}
+#corpo #fast_rotativo picture img:hover{width: 100%;}
+#corpo .banner_capa .texto-banner .acesso-mobile{display:none;}
+/* texto do banner */
+#corpo .banner_capa .texto-banner{height:70%;position: absolute; top: 13%; left: 9%;  }
+#corpo .banner_capa .texto-banner a{font-size:0.8vw;background:#ffffff36; padding:2% 4%; border-radius:999px; margin-top:1%; color:#FFFFFF;}
+#corpo .banner_capa .texto-banner h1,
+#corpo .banner_capa .texto-banner p{color:#FFFFFF;}
+
+#corpo .banner_capa .texto-banner h1{width:47%;font-family:'Myriad Pro Regular';font-size:4vw;font-weight:400; margin-bottom:0; line-height:4vw;}
+#corpo .banner_capa .texto-banner p{width:61%; margin-bottom:8%; font-size:1.5vw;}
+/* NAVEGAÇÃO NA PAGINA */
+.nav{ width: 100%; margin-top:1%;}
+.nav .botoes{display:flex; align-items:center; justify-content:center; gap:1.5%;}
+.nav .botoes a{color:#111111; font-size:1vw;padding:0.5% 1% ;border: 1px solid #111111;border-radius:999px}
+.nav .botoes a.btn-primario{font-size:0.9vw;display:flex; align-items:center;justify-content:center;gap:7%;background:#0D0303; color:#FFFFFF; cursor:pointer; font-weight:bold;}
+.nav .botoes a.btn-primario img{width:10%;}
+/* rotativo */
+#corpo .sugestoes::before{padding-top: 38%;}
+#corpo .sugestoes {position: relative; width: 100%;margin: 30px auto 0;}
+.sugestoes h2{width:35%;font-size:2.2vw;text-align: center; margin:2% auto 5% !important;}
+.sugestoes .texto-solucoes h3{font-size:1vw;}
+.sugestoes .texto-solucoes p{font-size:1vw;}
+
+.fast_rotativo2 { position: relative; display: block; margin: 0 auto; width: 75%; max-width: 1600px; }
+
+.fast_rotativo2>picture { display: none !important; }
+.fast_rotativo2>picture:first-of-type { display: block !important; }
+
+.fast_rotativo2 picture { position: relative; display: inline-block; width: 70%; margin: 0 auto; padding: 0; }
+.fast_rotativo2 picture img { display: block; width: 100%; margin: 0 auto; padding: 0; }
+.fast_rotativo2 picture a { position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; margin: 0; padding: 0; }
+
+#corpo .sugestoes .fast_rotativo2 .owl-nav { position: absolute; display: block; width: 100%; height: 0; left: 0; top: 40%; opacity: 1; 
+-webkit-transition: opacity 0.3s; -moz-transition: opacity 0.3s; -o-transition: opacity 0.3s; transition: opacity 0.3s; }
+#corpo .sugestoes .fast_rotativo2:hover .owl-nav { opacity: 1; }
+#corpo .sugestoes .fast_rotativo2 .owl-nav .owl-prev img, 
+#corpo .sugestoes .fast_rotativo2 .owl-nav .owl-next img { position: relative; display: block; width: 100%; margin: 0 auto; padding: 0; }
+ .owl-carousel.fast_rotativo2 .owl-nav .owl-prev,
+ .owl-carousel.fast_rotativo2 
+ .owl-nav .owl-next { position: absolute; width: 2.9%; display: block; padding: 2% 0.6% !important; border: 1px solid #303030; border-radius: 50px; }
+#corpo .fast_rotativo2 .owl-nav .owl-prev { left: -6.5%;padding: 0.8% 1.2% 0.8% 0.9% !important;}
+#corpo .fast_rotativo2 .owl-nav .owl-next { right: -6.5%;padding: 0.8% 0.9% 0.8% 1.2%!important; }
+
+/* .owl-carousel .owl-stage-outer{overflow: visible;} */
+
+ .container-botao-sugestao{width:100%; margin:4% auto 7%; text-align:center;}
+ a.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:1% 2%; border-radius:999px; cursor:pointer; font-weight: 600;}
+
+/* rotativo marcas */
+#corpo .marcas::before{padding-top: 23%;}
+#corpo .marcas h2{font-weight:400;font-size:1.5vw; text-align:center;}
+#corpo .marcas .owl-nav, #corpo .marcas .owl-dots{display:none;}
+
+.fast_marcas { position: relative; display: block; margin: 0 auto; width: 80%; max-width: 1600px; }
+.fast_marcas picture{width:100%; display:inline-block}
+/* video yotube */
+#corpo .video{margin-top: 8%; position:relative}
+#corpo .video::before{ padding: 0; padding-top: 35.0625%;}
+.flex_wrapper { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
+
+.flex_wrapper .size_wrapper { width: 60%; margin-bottom: -15%; margin-right:23%; } 
+.flex_wrapper .size_wrapper .video_wrapper { position: relative; margin: 0; height: 0; width: 75%; padding-bottom: 56.25%;      }
+    
+.flex_wrapper .size_wrapper .video_wrapper .spot_video { margin: 0 auto 50px; width: 95%; position: absolute; top: 0; left: 0; width: 100%; height: 80%; }
+
+#corpo .video .texto-video{width:40%;position:absolute; top: 17%; right: 2%; }
+#corpo .video .texto-video h2{width:71%;margin-bottom:10%;}
+#corpo .video .texto-video .botao a.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:2% 3%; border-radius:999px; cursor:pointer; font-weight: 600;}
+
+/* banner app */
+#corpo .banner_app::before{padding-top: 30%; }
+#corpo .banner_app{margin-top:5%;}
+#corpo .banner_app picture{width:50%;}
+#corpo .banner_app picture img{width:83%; position:absolute;top:0%; left:50vw;  z-index:3 !important;}
+#corpo .banner_app .texto-banner-app{width:40%;position:absolute; top:16%; left:8%}
+#corpo .banner_app .texto-banner-app .logo-app-lejour{width:7%;}
+#corpo .banner_app .texto-banner-app h2{width:81%;font-size:1.7vw;}
+#corpo .banner_app .texto-banner-app p{font-size:1.45vw;}
+#corpo .banner_app .background{width: 100%; height:22vw; background:#F2E4DC;position:absolute; top:4vw;}
+#corpo .banner_app  .links-app{display:flex; gap:2%;}
+#corpo .banner_app  .links-app img{width:24%; position:relative;}
+#corpo .banner_app  .links-app a{width:23%; height:22%; background:transparent; position:absolute; cursor:pointer;}
+#corpo .banner_app  .links-app a.google-play{left:26%}
+#corpo .banner_app .barra-divisao{margin-top:5%}
+/* imagem de como funciona */
+#corpo .banner_como_funciona::before{padding-top: 36%; }
+#corpo .banner_como_funciona{margin:5% auto 0%;}
+#corpo .banner_como_funciona h2{font-size:2vw; text-align:center;margin-bottom:5%;}
+#corpo .banner_como_funciona picture{width:65%; margin:0 auto;}
+#corpo  .container-botao{width:100%;font-size:1vw;margin:7% auto 10%; text-align:center;}
+#corpo  .container-botao .btn-primario{font-size:0.8vw; font-weight: 600;}
+
+/* ROTATIO DEPOIMENTOS */
+#corpo .depoimentos::before{padding-top:45%;}
+#corpo .depoimentos .carousel_depoimentos{width:100%;margin:0;}
+#corpo .depoimentos .carousel_depoimentos .fast_depoimentos{width:100%;margin:0;}
+#corpo .depoimentos .carousel_depoimentos .carousel_depoimentos{width:90%; margin-left:3%;}
+#corpo .depoimentos h2{width:42%;font-size:2.5vw;text-align: center;margin:0 auto 5%;}
+
+#corpo .depoimentos .fast_depoimentos .card{width:67%; border: 1px solid #111; position: relative;padding:3% 8% 2% 8%; border-radius:10px;margin-top:22%;margin-left: 15%; height: auto;}
+
+#corpo .depoimentos .fast_depoimentos .card .imagem-casal{position: absolute; bottom:90%; left:32%; }
+#corpo .depoimentos .fast_depoimentos .card .imagem-casal img{width:51%;}
+#corpo .depoimentos .fast_depoimentos .card .text-casal{text-align: center;padding:4%; margin-top:15%}
+#corpo .depoimentos .fast_depoimentos .card .text-casal h3{font-size:1.5vw;}
+#corpo .depoimentos .fast_depoimentos .card .text-casal p{font-size:0.92vw;}
+/* faq */
+.aniversario_faq { padding-bottom: 8rem;}
+#aniversario_sanfona_faq { width: 60%; margin: 0 auto;}
+.aniversario_faq #aniversario_sanfona_faq h2 {text-align: center;width: 100%;letter-spacing: 0.3vw;color: #050709;font-weight: 600;font-size: 2vw;margin: 5% auto 0;padding: 50px 0px 30px;     font-family: Arial, Helvetica, sans-serif;}
+.aniversario_sanfona_item {position: relative; cursor: pointer; border-radius: 999px;     font-size: 1.3vw; color: #303030; border: 1px solid #30303030; margin:0; }
+.aniversario_sanfona_item_ativo {border-radius:25px; }
+.aniversario_sanfona_titulo p{font-size:0.9vw;font-weight: bold; margin-left:3% !important; padding:0 3%}
+.aniversario_sanfona_seta { position: absolute; width: 3%; right: 2%; top: 25%;transform: rotate(0deg);filter: grayscale(100%);}
+.aniversario_sanfona_conteudo { max-height: 0;overflow: hidden;transition: 200ms;}
+#corpo .aniversario_sanfona_conteudo p { width: 90%; font-size:1vw;line-height: 18pt;margin-top: 1vw; margin-left:3%;}
+.aniversario_sanfona_item_ativo .aniversario_sanfona_seta { transform: rotate(180deg);}
+.aniversario_sanfona_item_ativo .aniversario_sanfona_conteudo{transition: max-height 500ms; max-height: 500px;} 
+
+.link-ver-mais{ text-align: center; margin-top:3%}
+.link-ver-mais a{font-weight:bold; cursor:pointer; color:#303030;}
+
+
+@media (min-width:2100px){
+  .container-botao-sugestao{margin: 64px auto 120px;}
+    #corpo .depoimentos h2{width: 50%;}
+   #corpo .depoimentos::before{padding-top: 65%;}
+}
+@media (min-width:1600px){
+#corpo .banner_capa .texto-banner{top:73px;}
+#corpo .banner_capa .texto-banner h1 {font-size:61px;line-height: 65px;}
+#corpo .banner_capa .texto-banner a {font-size:16px; padding:15px 41px;}
+  .nav .botoes a.btn-primario {width:300px;font-size:17px;}
+
+  #corpo .sugestoes::before{padding-top:44%;}
+  .sugestoes h2{font-size:36px;}
+  .sugestoes .texto-solucoes h3{font-size: 17px;}
+  .sugestoes .texto-solucoes p{font-size: 17px;}
+  .container-botao-sugestao{margin:17px auto 7%;}
+
+  #corpo .banner_app::before{padding-top: 38%;}
+  #corpo .banner_app .background {height:390px; top:98px;}
+  #corpo .banner_app picture img{width:100%;top:-7px; left:769px;}
+
+  #corpo .banner_app .texto-banner-app {top:143px;}
+  #corpo .banner_app .texto-banner-app h2{font-size: 27px;}
+  #corpo .banner_app .texto-banner-app p{font-size: 23px;}
+
+  #corpo .depoimentos::before{padding-top:52%}
+  #corpo .depoimentos h2{width:49%;}
+  #corpo .depoimentos .fast_depoimentos .card {width: 284px;}
+  #corpo .depoimentos .fast_depoimentos .card .text-casal h3{font-size: 23px;}
+  #corpo .depoimentos .fast_depoimentos .card .text-casal p{font-size: 14px;}
+  #corpo .depoimentos .fast_depoimentos .card .imagem-casal{left:35%;}
+  #corpo .depoimentos .fast_depoimentos .card .imagem-casal img{width: 61%;}
+
+  .aniversario_faq #aniversario_sanfona_faq h2{margin: 5% auto 2%;}
+}
+
+@media(max-width:1100px){
+/* BANNER TOPO */
+ #corpo .banner_capa::before{padding-top:88.0625%;}
+ #corpo .banner_capa picture { display: block;width: 100%;}
+ #corpo .banner_capa picture img{width:100%; height:auto;}
+ #corpo .banner_capa .texto-banner {top:45%;}
+ #corpo .banner_capa .texto-banner h1 {font-size:7.5vw; line-height:7vw;}
+ #corpo .banner_capa .texto-banner p{width:64%;font-size:2.8vw}
+ #corpo .banner_capa .texto-banner a{font-size:2vw;font-weight:700; display:flex; align-items: center;}
+
+ #corpo .banner_capa .texto-banner .botoes-banner{display:flex;gap:4%}
+ #corpo .banner_capa .texto-banner .acesso-mobile{width:36%;display:flex;align-items:center;justify-content:center;gap:7%; font-size:2vw;background:#ffffff;padding:2% 2%;border-radius:999px;margin-top: 1%;color: #111111; }
+ #corpo .banner_capa .texto-banner .acesso-mobile img{width:12%; }
+/* NAVEGAÇÃO */
+
+.nav .botoes a.btn-primario {display:none;}
+.nav .botoes a {font-size:2.1vw;font-weight:600; padding:1% 2%}
+/* rotativo */
+#corpo .sugestoes::before {padding-top: 114%;}
+.fast_rotativo2 picture{width:91%;}
+.sugestoes h2{width:64%; font-size:5.2vw !important;}
+
+.sugestoes .texto-solucoes h3{font-size:3vw} 
+.sugestoes .texto-solucoes p{font-size:2.4vw}
+
+.owl-carousel.fast_rotativo2 .owl-nav .owl-prev, .owl-carousel.fast_rotativo2 .owl-nav .owl-next {
+    width: 5%;
+}
+a.btn-primario{font-size:3vw; padding:3% 24%;}
+
+/* rotativo marcas */
+#corpo .marcas::before{padding-top:79%}
+#corpo .marcas h2{font-size:5vw !important; margin-top:10%;}
+
+/* video youtube */
+#corpo .video::before{padding-top:100%}
+
+.flex_wrapper .size_wrapper { width: 79%;margin-right:0;}
+.flex_wrapper .size_wrapper .video_wrapper {width:100%; padding-bottom:68.25%}
+#corpo .video .texto-video{width:100%;top:46%; right:0%; text-align:center;}
+#corpo .video .texto-video h2{width:82%; font-size:5vw; margin:10%}
+#corpo .video .texto-video .botao{width:100%}
+#corpo .video .texto-video .botao a.btn-primario{font-size:3vw; padding:3% 24%;}
+/* banner app */
+#corpo .banner_app{margin-top:20%}
+#corpo .banner_app::before { padding-top: 142%;}
+#corpo .banner_app .background {height:122vw;}
+#corpo .banner_app picture img{z-index: 3 !important;}
+#corpo .banner_app .texto-banner-app {display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;top:45%;left:0; text-align: center;}
+#corpo .banner_app .texto-banner-app .logo-app-lejour {width:11%;}
+
+#corpo .banner_app .texto-banner-app h2{font-size:5vw;}
+#corpo .banner_app .texto-banner-app p{font-size:3vw;}
+
+#corpo .banner_app .texto-banner-app .links-app{justify-content:center; margin-top:5%;}
+#corpo .banner_app picture {width:95%;}
+#corpo .banner_app picture img{width:100%;top:-6%;left:2%;}
+
+/* COMO funciona */
+#corpo .banner_como_funciona::before{padding-top:85%;}
+#corpo .banner_como_funciona h2{font-size:5vw;}
+#corpo .container-botao .btn-primario{font-size:3vw;}
+
+/* ROTATIO DEPOIMENTOS */
+#corpo .depoimentos::before{padding-top:100%;}
+#corpo .depoimentos h2{width: 75%; font-size:5vw;}
+#corpo .depoimentos .carousel_depoimentos .fast_depoimentos{width:112%;margin:0 2vw}
+#corpo .depoimentos .fast_depoimentos .card{width:65%; border: 1px solid #111; position: relative;padding:3% 5% 2% 5%; border-radius:10px;margin-top:22%; margin-left: 15%; height: 52vw;}
+
+#corpo .depoimentos .fast_depoimentos .card .text-casal h3{font-size:2.5vw;}
+#corpo .depoimentos .fast_depoimentos .card .text-casal p{font-size:2vw;} 
+
+/* DOTS ROTATIVO MOBILE */
+.fast_depoimentos .owl-dots { display: block; position: relative; margin: 5% auto; width: 100%; text-align: center; }
+.fast_depoimentos .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
+.fast_depoimentos .owl-dots .owl-dot span { display: block; outline: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
+.fast_depoimentos .owl-dots .owl-dot:hover span, 
+.fast_depoimentos .owl-dots .owl-dot.active span { background-color: #8f8e8e; } 
+
+/* FAQ */
+.aniversario_faq{padding-bottom:3rem;}
+.aniversario_faq #aniversario_sanfona_faq h2{font-size:4vw;}
+#aniversario_sanfona_faq{width:85%}
+.aniversario_sanfona_item{margin-bottom:-3%;}
+#corpo .aniversario_sanfona_titulo p {font-size:2vw; margin-left: 3%;}
+.aniversario_sanfona_conteudo p{font-size:2vw}
+
+}
+    
+</style>
 
 <!-- INICIO LP -->
 <div id="corpo">
     <!-- BARRA ACIMA DO LOGO ESTA EM APROVAÇÃO -->
     <!-- <div class="logo-fast-lejour">
-        <img src="files/images/logo_fast_lejour.png" alt="logo fast shop mais Lejour">
+        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/logo_fast_lejour.png" alt="logo fast shop mais Lejour">
     </div> -->
     <!-- BANNER TOPO -->
     <div class="wrapper-aspect-ratio banner_capa">
         <picture class="inner">
             <source media="(max-width: 1100px)"
-                srcset="files/images/Banner_Topo_LP_CASAMENTO_MOBILE.jpeg">
+                srcset="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/Banner_Topo_LP_CASAMENTO_MOBILE.jpeg">
             <img width="100%" height="auto"
-                src="files/images/Banner_Topo_LP_CASAMENTO_Desk.jpeg"
+                src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/Banner_Topo_LP_CASAMENTO_Desk.jpeg"
                 alt="Banner lista de casamento Fast Shop">
                 <div class="texto-banner">
                     <h1>Lista de Casamento</h1>
                     <p>Tudo que você precisa para montar a casa dos seus sonhos.</p>
                     <div class="botoes-banner">
                         <a href="https://admin-site.lejour.com.br/onboarding/inicio?source=fastshop">CRIAR LISTA GRÁTIS</a>
-                        <a class="acesso-mobile" href="https://admin-site.lejour.com.br/login " target=_blank><img src="files/images/icon-use-svg.svg" alt="">Acesse sua conta</a>
+                        <a class="acesso-mobile" href="https://admin-site.lejour.com.br/login " target=_blank><img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-use-svg-white.svg" alt="">Acesse sua conta</a>
                     </div>
                 </div>
         </picture>
@@ -47,7 +322,7 @@
         <a href="#lejour">Conheça a Lejour</a>
         <a href="#comoFunciona">Como funciona</a>
         <a href="#FAQ">Perguntas frequentes</a>
-        <a class="btn-primario" href="https://admin-site.lejour.com.br/login " target=_blank><img src="files/images/icon-use-svg.svg" alt="">Acesse sua conta</a>
+        <a class="btn-primario" href="https://admin-site.lejour.com.br/login " target=_blank><img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-use-svg.svg" alt="">Acesse sua conta</a>
        </div>
      </div>
     <!-- Rotativo  -->
@@ -57,30 +332,24 @@
             <div class="carousel_sugestoes">
                 <div id="fast_rotativo2" class="owl-carousel fast_rotativo2">
                     <picture class="moldura">
-                        <img src="files/images/imagem_01.png"
-                            alt="air-fryer">
-                        <a
-                            href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/imagem_01.png" alt="serviços de soluções Fast shop"  >           
+                      <!-- <a href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>  -->
                             <div class="texto-solucoes">
                                 <h3>Site de casamento grátis</h3>
                                 <p>Centralize as informações do seu casamento em um único lugar</p>
                             </div>
                     </picture>
                     <picture class="moldura">
-                        <img src="files/images/imagem_02.png"
-                            alt="cafeirra dulce gusto">
-                        <a
-                            href="https://www.fastshop.com.br/web/p/d/ARDGS2PTO_PRD/cafeteira-arno-dolce-gusto-genio-s-plus-preta-para-cafe-espresso-dgs2"></a>
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/imagem_02.png" alt="serviços de soluções Fast shop">
+                        <!-- <a href="https://www.fastshop.com.br/web/p/d/ARDGS2PTO_PRD/cafeteira-arno-dolce-gusto-genio-s-plus-preta-para-cafe-espresso-dgs2"></a> -->
                             <div class="texto-solucoes">
                                 <h3>Listas pré-prontas e personalizáveis</h3>
                                 <p>Personalize do seu jeito: para casa nova, lua de mel ou experiências e use seus créditos onde e quando preferir</p>
                             </div>
                     </picture>
                     <picture class="moldura">
-                        <img src="files/images/imagem_03.png"
-                            alt="gaseficador">
-                        <a
-                            href="https://www.fastshop.com.br/web/p/d/RR408893PTO_PRD/maquina-para-gaseificar-agua-com-gas-terra-preta-sodastream"></a>
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/imagem_03.png" alt="serviços de soluções Fast shop" >               
+                            <!-- <a href="https://www.fastshop.com.br/web/p/d/RR408893PTO_PRD/maquina-para-gaseificar-agua-com-gas-terra-preta-sodastream"></a> -->
                             <div class="texto-solucoes">
                                 <h3>Resgate 100% flexível</h3>
                                 <p>Resgate em produtos Fast Shop com cashback ou dinheiro na sua conta</p>
@@ -88,19 +357,17 @@
                     </picture>
 
                     <picture class="moldura">
-                        <img src="files/images/imagem_04.png"
-                            alt="maquina de café três corações">
-                        <a
-                            href="https://www.fastshop.com.br/web/p/d/3T2003PTO_PRD/cafeteira-espresso-passione-preta-automatica-tres-3-coracoes"></a>
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/imagem_04.png"
+                            alt="serviços de soluções Fast shopcorações">
+                        <!-- <a href="https://www.fastshop.com.br/web/p/d/3T2003PTO_PRD/cafeteira-espresso-passione-preta-automatica-tres-3-coracoes"></a> -->
                             <div class="texto-solucoes">
                                 <h3>Garantia Estendida</h3>
                                 <p>Aproveite a tranquilidade de ter o seu produto consertado ou substituído, mesmo após o término da garantia do fabricante</p>
                             </div>
                     </picture>
                     <picture class="moldura">
-                        <img src="files/images/imagem_05.png"                    alt="adega de vinhos">
-                        <a
-                            href="https://www.fastshop.com.br/web/p/d/9BBAC120PTO_PRD/adega-de-vinhos-benmax-para-120-garrafas-com-ate-22c-bac120"></a>
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/imagem_05.png"                    alt="serviços de soluções Fast shop"  >     
+                         <!-- <a href="https://www.fastshop.com.br/web/p/d/9BBAC120PTO_PRD/adega-de-vinhos-benmax-para-120-garrafas-com-ate-22c-bac120"></a> -->
                             <div class="texto-solucoes">
                                 <h3>Instalação e orientação de uso</h3>
                                 <p>Que tal deixar a instalação do seu produto com a gente? No caso da sua TV, por exemplo, basta preparar a pipoca para
@@ -108,10 +375,9 @@
                             </div>
                     </picture>
                     <picture class="moldura">
-                        <img src="files/images/imagem_06.png"
-                            alt="vaporizador de roupas">
-                        <a
-                            href="https://www.fastshop.com.br/web/p/d/ARHS81BAZ_PRD/vaporizador-de-roupas-arno-steam-power-com-1460w-de-potencia-hs81"></a>
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/imagem_06.png"
+                            alt="serviços de soluções Fast shop">
+                        <!-- <a href="https://www.fastshop.com.br/web/p/d/ARHS81BAZ_PRD/vaporizador-de-roupas-arno-steam-power-com-1460w-de-potencia-hs81"></a> -->
                             <div class="texto-solucoes">
                                 <h3>Casa Inteligente</h3>
                                 <p>Do acordar ao lazer, praticidade é palavra-chave para quem tem um lar conectado: basta um simples comando de voz para
@@ -133,82 +399,82 @@
         <div class="carousel_marcas">
             <div id="fast_marcas" class="owl-carousel fast_marcas">
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-01.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-01.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-02.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-02.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-03.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-03.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-04.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-04.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-05.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-05.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-06.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-06.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-07.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-07.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-08.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-08.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-09.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-09.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-10.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-10.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-11.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-11.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
                 <picture class="moldura">
-                    <img src="files/images/icon-logo-12.svg"
-                        alt="air-fryer">
-                    <a
-                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a>
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/icon-logo-12.svg"
+                        alt="As melhores marcas fast shop">
+                    <!-- <a
+                        href="https://www.fastshop.com.br/web/p/d/EXEAF50GFT_PRD/fritadeira-eletrica-airfryer-family-efficient-electrolux-grafite-eaf50"></a> -->
                 </picture>
 
             </div>
         </div>
+        <hr>
     </div>
-    <hr>
 </div>
 
 <!-- VIDEO YOUTUBE -->
@@ -234,17 +500,19 @@
 <div id="lejour" class="wrapper-aspect-ratio banner_app">
     <picture class="inner">
         <source media="(max-width: 1100px)"
-            srcset="">
-        <img width="100%" height="auto" src="files/images/imagem-celular-app.png"
+            srcset="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/imagem-celular-app.png">
+        <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/imagem-celular-app.png"
             alt="Banner App lista de casamento Fast Shop">
     </picture>
         <div class="background"></div>
         <div class="texto-banner-app">
+            <img class="logo-app-lejour"
+             src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/logo-app-Lejour.png" alt="Logo app Lejour">
             <h2>Seu casamento na palma da sua mão com o app Lejour</h2>
             <p>Crie sua lista de casamento em poucos cliques. <br>  <strong>Baixe o App.</strong></p>
             <div class="links-app">
-                <img src="files/images/botao-baixe-o-app-na-app-store.png" alt="app store">
-                <img src="files/images/botao-baixe-o-app-no-google-play.png" alt="google play">
+                <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/botao-baixe-o-app-na-app-store.png" alt="app store">
+                <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/botao-baixe-o-app-no-google-play.png" alt="google play">
                 <!-- <a href=""></a>
                 <a class="google-play" href=""></a> -->
             </div>
@@ -257,8 +525,8 @@
     <picture class="inner">
         <h2>Como funciona?</h2>
         <source media="(max-width: 1100px)"
-            srcset="https://fastshopwr-a.akamaihd.net/pages/2024/05/presentes/files/images/Banner_Topo_LP_Presentes_Maes_Mobile.png">
-        <img width="100%" height="auto" src="files/images/image_como_funciona_svg.svg"
+            srcset="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/image_como_funciona_mobile.png">
+        <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/image_como_funciona_svg.svg"
             alt="Banner App lista de casamento Fast Shop">
     </picture>
 
@@ -267,50 +535,116 @@
    <a class="btn-primario" href="https://admin-site.lejour.com.br/onboarding/inicio?source=fastshop">CRIAR LISTA DE CASAMENTO →</a>
 </div>
 
-<div class="depoimentos">
-    <h2>O que os casais dizem sobre a lista Lejour + Fast Shop</h2>
-    <div class="cards-casais">
-        <div class="card">
-            <div class="imagem-casal">
-                <img src="files/images/depoimentos_1.png" alt="Depoimento dos casais">
-            </div>
-            <div class="text-casal">
-                <h3>Livia Magri</h3>
-                <p>“Criar o site na Lejour foi super simples. Conseguimos colocar as informações do nosso casamento num site clean, com
-                tudo o que os convidados precisavam saber sobre nós, a festa e sobre a nossa lista de presentes. Os convidados compraram
-                com facilidade e a gente resgatou com tranquilidade os produtos que queríamos e e ainda sobrou dinheiro para usar na
-                nossa lua de mel dos sonhos! Obrigada Lejour 😉”</p>
-            </div>
-        </div>
+<!-- ROTATIVO DEPOIMENTOS -->
+<div class="wrapper-aspect-ratio depoimentos">
+    <div class="inner">
+        <h2>O que os casais dizem sobre a lista Lejour + Fast Shop</h2>
+        <div class="carousel_depoimentos">
+            <div id="fast_depoimentos" class="owl-carousel fast_depoimentos">
 
-        <div class="card">
-            <div class="imagem-casal">
-                <img src="files/images/depoimentos_2.png" alt="Depoimento dos casais">
+            <div class="card">
+                <div class="imagem-casal">
+                    <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/depoimentos_1.png" alt="Depoimento dos casais">
+                </div>
+                <div class="text-casal">
+                    <h3>Livia Magri</h3>
+                    <p>“Criar o site na Lejour foi super simples. Conseguimos colocar as informações do nosso casamento num site
+                        clean, com
+                        tudo o que os convidados precisavam saber sobre nós, a festa e sobre a nossa lista de presentes. Os
+                        convidados compraram
+                        com facilidade e a gente resgatou com tranquilidade os produtos que queríamos e e ainda sobrou dinheiro para
+                        usar na
+                        nossa lua de mel dos sonhos! Obrigada Lejour 😉”</p>
+                </div>
             </div>
-            <div class="text-casal">
-                <h3>Analisia Alves</h3>
-                <p>“Ótima experiência! Foi muito fácil criar meu site de casamento. A lista de presentes também é incrível, rápida e
-                simples de mexer. Adoramos tudo e nossos convidados também. Foi super simples para eles comprarem os presentes e ficou
-                ainda mais fácil para gente resgatar para usar onde quiser. Com certeza a melhor opção que encontramos.”</p>
-            </div>
-        </div>
 
-        <div class="card">
-            <div class="imagem-casal">
-                <img src="files/images/depoimentos_3.png" alt="Depoimento dos casais">
-            </div>
-            <div class="text-casal">
-                <h3>Lellen Beatriz</h3>
-                <p>“É emocionante planejar e ver todos os detalhes saindo do papel. É assim o meu sentimento por montar o site para a lista
-                de presentes e imaginar a facilidade que meus convidados terão para nos presentear. Nele eu consegui colocar a data e
-                local da cerimônia, nossa história, o noivado e detalhes da festa. Não vejo a hora de compartilhar com as pessoas amadas
-                e curtir nosso grande dia.”</p>
+                   <div class="card">
+                    <div class="imagem-casal">
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/depoimentos_2.png" alt="Depoimento dos casais">
+                    </div>
+                    <div class="text-casal">
+                        <h3>Analisia Alves</h3>
+                        <p>“Ótima experiência! Foi muito fácil criar meu site de casamento. A lista de presentes também é incrível,
+                            rápida e
+                            simples de mexer. Adoramos tudo e nossos convidados também. Foi super simples para eles comprarem os
+                            presentes e ficou
+                            ainda mais fácil para gente resgatar para usar onde quiser. Com certeza a melhor opção que encontramos.”</p>
+                            <br>
+                            
+                    </div>
+                </div>
+              
+                <div class="card">
+                    <div class="imagem-casal">
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/depoimentos_3.png" alt="Depoimento dos casais">
+                    </div>
+                    <div class="text-casal">
+                        <h3>Lellen Beatriz</h3>
+                        <p>“É emocionante planejar e ver todos os detalhes saindo do papel. É assim o meu sentimento por montar o site
+                            para a lista
+                            de presentes e imaginar a facilidade que meus convidados terão para nos presentear. Nele eu consegui colocar
+                            a data e
+                            local da cerimônia, nossa história, o noivado e detalhes da festa. Não vejo a hora de compartilhar com as
+                            pessoas amadas
+                            e curtir nosso grande dia.”</p>
+                    </div>
+                </div>
+                
+                <!-- DUPLICANDO ELEMENTO DO ROTATIVO -->
+                <div class="card">
+                    <div class="imagem-casal">
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/depoimentos_1.png" alt="Depoimento dos casais">
+                    </div>
+                    <div class="text-casal">
+                        <h3>Livia Magri</h3>
+                        <p>“Criar o site na Lejour foi super simples. Conseguimos colocar as informações do nosso casamento num site
+                            clean, com
+                            tudo o que os convidados precisavam saber sobre nós, a festa e sobre a nossa lista de presentes. Os
+                            convidados compraram
+                            com facilidade e a gente resgatou com tranquilidade os produtos que queríamos e e ainda sobrou dinheiro para
+                            usar na
+                            nossa lua de mel dos sonhos! Obrigada Lejour 😉”</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="imagem-casal">
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/depoimentos_2.png" alt="Depoimento dos casais">
+                    </div>
+                    <div class="text-casal">
+                        <h3>Analisia Alves</h3>
+                        <p>“Ótima experiência! Foi muito fácil criar meu site de casamento. A lista de presentes também é incrível,
+                            rápida e
+                            simples de mexer. Adoramos tudo e nossos convidados também. Foi super simples para eles comprarem os
+                            presentes e ficou
+                            ainda mais fácil para gente resgatar para usar onde quiser. Com certeza a melhor opção que encontramos.”</p>
+                        <br>
+                
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="imagem-casal">
+                        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/09/lista-casamento/depoimentos_3.png" alt="Depoimento dos casais">
+                    </div>
+                    <div class="text-casal">
+                        <h3>Lellen Beatriz</h3>
+                        <p>“É emocionante planejar e ver todos os detalhes saindo do papel. É assim o meu sentimento por montar o site
+                            para a lista
+                            de presentes e imaginar a facilidade que meus convidados terão para nos presentear. Nele eu consegui colocar
+                            a data e
+                            local da cerimônia, nossa história, o noivado e detalhes da festa. Não vejo a hora de compartilhar com as
+                            pessoas amadas
+                            e curtir nosso grande dia.”</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
     </div>
-    
-</div>   
+</div>
 
 <!-- FAQ -->
 <!-- FAQ -->
@@ -417,5 +751,98 @@
 
 
 
-<!-- <script src="https://fastshopwr-a.akamaihd.net/pages/2024/05/presentes/script.js"></script> -->
- <script src="script.js"></script>
+<script>
+            //Rotativo Quick Filter
+                var carouselDelay = 1000;
+
+
+                //Rotativo SugestÃµes
+                (function ($) {
+                    $('.fast_rotativo2').owlCarousel({
+                        items: 1,
+                        loop: true,
+                        smartSpeed: 600,
+                        responsiveClass: true,
+                        nav: true,
+                        navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+                        responsive: { 0: { items: 1.5, margin: 0 }, 1100: { items: 3.5, margin: 4 } },
+                        slideBy: 3,
+                        autoplay: true,
+                        autoplayTimeout: 20000,
+                        autoplayHoverPause: true
+                    });
+                })(jQuery);
+                //  ROTATIVO DE MARCAS
+                (function ($) {
+                    $('.fast_marcas').owlCarousel({
+                        items: 0,
+                        loop: true,
+                        smartSpeed: 6000,
+                        responsiveClass: true,
+                        nav: false,
+                        // navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+                        responsive: { 0: { items: 1.5, margin: 0 }, 1100: { items: 5.5, margin: 4 } },
+                        slideBy: 3,
+                        autoplay: true,
+                        autoplayTimeout: 1000,
+                        autoplayHoverPause: true
+                    });
+                })(jQuery);
+
+                // ROTATIVO DE DEPOIMENTOS
+                (function ($) {
+                    $('.fast_depoimentos').owlCarousel({
+                        items: 0,
+                        loop: true,
+                        smartSpeed: 6000,
+                        responsiveClass: true,
+                        nav: false,
+                        // navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+                        responsive: { 0: { items: 1.5, margin: 0,  slideBy: 1 }, 1100: { items: 3, margin: 4, autoplay: false, mouseDrag: false } },
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true
+                    });
+                })(jQuery);
+
+
+                // FAQ
+                $('.aniversario_sanfona_item').click(function () {
+                    console.log("click:")
+                    var alvo = '#' + $(this).attr('id');
+
+                    if ($(alvo).attr('sanfona_item_ativo') == 'false') {
+                        $('.aniversario_sanfona_item').attr('sanfona_item_ativo', 'false');
+                        $('.aniversario_sanfona_item').removeClass('aniversario_sanfona_item_ativo');
+
+                        $(alvo).addClass('aniversario_sanfona_item_ativo');
+                        $(alvo).attr('sanfona_item_ativo', 'true');
+
+                        console.log("open")
+                    }
+                    else {
+                        $(alvo).removeClass('aniversario_sanfona_item_ativo');
+                        $(alvo).attr('sanfona_item_ativo', 'false');
+
+                        console.log("close")
+                    }
+                });
+
+
+                // Seleciona todos os links que apontam para âncoras na página
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault(); // Previne o comportamento padrão
+
+                        // Anima a rolagem até o elemento alvo da âncora
+                        window.scrollTo({
+                            top: document.querySelector(this.getAttribute('href')).offsetTop,
+                            behavior: 'smooth' // Define o comportamento de rolagem suave
+                        });
+                    });
+                });
+
+
+
+            
+</script>

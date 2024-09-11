@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('https://fastshopwr-a.akamaihd.net/pages/2022/JDDpais_v2/fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+    }
+  @font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('https://fastshopwr-a.akamaihd.net/pages/2022/JDDpais_v2/fonts/MYRIADPRO-BOLD.OTF') format('opentype');
+    }
+
 #corpo {display: block;position: relative;margin: 0 auto ; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: 'Open Sans', sans-serif; color: #303030;overflow: hidden;}
+
 html { scroll-behavior: smooth;}
 
 a{text-decoration: none;}
@@ -21,7 +31,7 @@ hr{width:40%; text-align: center;}
 #corpo .banner_capa .texto-banner h1,
 #corpo .banner_capa .texto-banner p{color:#FFFFFF;}
 
-#corpo .banner_capa .texto-banner h1{width:47%;font-size:3.5vw;font-weight:400; margin-bottom:0; line-height:4vw;}
+#corpo .banner_capa .texto-banner h1{width:47%;font-family:'Myriad Pro Regular';font-size:3.5vw;font-weight:400; margin-bottom:0; line-height:4vw;}
 #corpo .banner_capa .texto-banner p{width:61%; margin-bottom:8%; font-size:1.2vw;}
 /* NAVEGAÇÃO NA PAGINA */
 .nav{ width: 100%; margin-top:1%;}
@@ -81,14 +91,15 @@ hr{width:40%; text-align: center;}
 #corpo .video .texto-video .botao a.btn-primario{font-size:0.8vw;background:#0D0303; color:#FFFFFF; padding:2% 3%; border-radius:999px; cursor:pointer; font-weight: 600;}
 
 /* banner app */
-#corpo .banner_app::before{padding-top: 27%; }
+#corpo .banner_app::before{padding-top: 30%; }
 #corpo .banner_app{margin-top:5%;}
 #corpo .banner_app picture{width:50%;}
-#corpo .banner_app picture img{width:75%; position:absolute;top:0%; left:50vw;  z-index:1;}
+#corpo .banner_app picture img{width:83%; position:absolute;top:0%; left:50vw;  z-index:1;}
 #corpo .banner_app .texto-banner-app{width:40%;position:absolute; top:16%; left:8%}
+#corpo .banner_app .texto-banner-app .logo-app-lejour{width:7%;}
 #corpo .banner_app .texto-banner-app h2{width:81%;font-size:1.7vw;}
 #corpo .banner_app .texto-banner-app p{font-size:1.45vw;}
-#corpo .banner_app .background{width: 100%; height:20vw; background:#F2E4DC;position:absolute; top:4vw;}
+#corpo .banner_app .background{width: 100%; height:22vw; background:#F2E4DC;position:absolute; top:4vw;}
 #corpo .banner_app  .links-app{display:flex; gap:2%;}
 #corpo .banner_app  .links-app img{width:24%; position:relative;}
 #corpo .banner_app  .links-app a{width:23%; height:22%; background:transparent; position:absolute; cursor:pointer;}
@@ -101,17 +112,21 @@ hr{width:40%; text-align: center;}
 #corpo .banner_como_funciona picture{width:65%; margin:0 auto;}
 #corpo  .container-botao{width:100%;font-size:1vw;margin:7% auto 10%; text-align:center;}
 #corpo  .container-botao .btn-primario{font-size:0.8vw; font-weight: 600;}
-/* depoimentos */
-#corpo .depoimentos{width:90%; margin:0 auto;}
-#corpo .depoimentos h2{width:42%;font-size:2.5vw;text-align: center;margin:0 auto;}
-#corpo .depoimentos .cards-casais{display:flex;justify-content:space-around; margin-top:12%; gap:5%;}
-#corpo .depoimentos .cards-casais .card{width:21%; border: 1px solid #111; position: relative;padding:3% 2% 1% 2%; border-radius:10px;}
-#corpo .depoimentos .cards-casais .imagem-casal{position: absolute; bottom:90%; left:32%; }
-#corpo .depoimentos .cards-casais .imagem-casal img{width:51%;}
-#corpo .depoimentos .cards-casais .text-casal{text-align: center}
-#corpo .depoimentos .cards-casais .text-casal h3{font-size:1.5vw;}
-#corpo .depoimentos .cards-casais .text-casal p{font-size:0.92vw;}
 
+/* ROTATIO DEPOIMENTOS */
+#corpo .depoimentos::before{padding-top:51%;}
+#corpo .depoimentos .carousel_depoimentos{width:90%;margin:0;}
+#corpo .depoimentos .carousel_depoimentos .fast_depoimentos{width:112%;margin:0 -3vw}
+#corpo .depoimentos .carousel_depoimentos .carousel_depoimentos{width:90%; margin-left:3%;}
+#corpo .depoimentos h2{width:42%;font-size:2.5vw;text-align: center;margin:0 auto 5%;}
+
+#corpo .depoimentos .fast_depoimentos .card{width:51%; border: 1px solid #111; position: relative;padding:3% 8% 2% 8%; border-radius:10px;margin-top:22%;}
+
+#corpo .depoimentos .fast_depoimentos .card .imagem-casal{position: absolute; bottom:90%; left:32%; }
+#corpo .depoimentos .fast_depoimentos .card .imagem-casal img{width:51%;}
+#corpo .depoimentos .fast_depoimentos .card .text-casal{text-align: center;padding:4%; margin-top:15%}
+#corpo .depoimentos .fast_depoimentos .card .text-casal h3{font-size:1.5vw;}
+#corpo .depoimentos .fast_depoimentos .card .text-casal p{font-size:0.92vw;}
 /* faq */
 .aniversario_faq { padding-bottom: 8rem;}
 #aniversario_sanfona_faq { width: 60%; margin: 0 auto;}
@@ -143,9 +158,82 @@ hr{width:40%; text-align: center;}
  #corpo .banner_capa .texto-banner {top:45%;}
  #corpo .banner_capa .texto-banner h1 {font-size:7.5vw; line-height:7vw;}
  #corpo .banner_capa .texto-banner p{width:64%;font-size:2.8vw}
- #corpo .banner_capa .texto-banner a{font-size:1.5vw;}
+ #corpo .banner_capa .texto-banner a{font-size:2vw;font-weight:700}
 
  #corpo .banner_capa .texto-banner .botoes-banner{display:flex;gap:4%}
- #corpo .banner_capa .texto-banner .acesso-mobile{display:flex;gap:7%;background:#ffffff36;padding:2%4%;border-radius:999px;    margin-top: 1%;    color: #FFFFFF; }
- #corpo .banner_capa .texto-banner .acesso-mobile img{width:10%;}
+ #corpo .banner_capa .texto-banner .acesso-mobile{width:28%;display:flex;align-items:center;justify-content:center;gap:7%; font-size:2vw;background:#ffffff;padding:2% 2%;border-radius:999px;margin-top: 1%;    color: #303030; }
+ #corpo .banner_capa .texto-banner .acesso-mobile img{width:12%; }
+/* NAVEGAÇÃO */
+
+.nav .botoes a.btn-primario {display:none;}
+.nav .botoes a {font-size:2.1vw;font-weight:600; padding:1% 2%}
+/* rotativo */
+#corpo .sugestoes::before {padding-top: 114%;}
+.fast_rotativo2 picture{width:91%;}
+.sugestoes h2{width:64%; font-size:5.2vw;}
+
+.sugestoes .texto-solucoes h3{font-size:3vw} 
+.sugestoes .texto-solucoes p{font-size:2.4vw}
+
+.owl-carousel.fast_rotativo2 .owl-nav .owl-prev, .owl-carousel.fast_rotativo2 .owl-nav .owl-next {
+    width: 5%;
+}
+a.btn-primario{font-size:3vw; padding:3% 24%;}
+
+/* rotativo marcas */
+#corpo .marcas::before{padding-top:79%}
+.marcas h2{font-size:5vw;}
+
+/* video youtube */
+#corpo .video::before{padding-top:100%}
+#corpo .video{
+
+}
+.flex_wrapper .size_wrapper { width: 79%;margin-right:0;}
+.flex_wrapper .size_wrapper .video_wrapper {width:100%; padding-bottom:68.25%}
+#corpo .video .texto-video{width:100%;top:46%; right:0%; text-align:center;}
+#corpo .video .texto-video h2{width:82%; font-size:5vw; margin:10%}
+#corpo .video .texto-video .botao{width:100%}
+#corpo .video .texto-video .botao a.btn-primario{font-size:3vw; padding:3% 24%;}
+/* banner app */
+#corpo .banner_app{margin-top:20%}
+#corpo .banner_app::before { padding-top: 142%;}
+#corpo .banner_app .background {height:122vw;}
+#corpo .banner_app .texto-banner-app {display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;top:45%;left:0; text-align: center;}
+#corpo .banner_app .texto-banner-app .logo-app-lejour {width:11%;}
+
+#corpo .banner_app .texto-banner-app h2{font-size:5vw;}
+#corpo .banner_app .texto-banner-app p{font-size:3vw;}
+
+#corpo .banner_app .texto-banner-app .links-app{justify-content:center; margin-top:5%;}
+#corpo .banner_app picture {width:95%;}
+#corpo .banner_app picture img{width:100%;top:-6%;left:2%;}
+
+/* COMO funciona */
+#corpo .banner_como_funciona::before{padding-top:85%;}
+#corpo .banner_como_funciona h2{font-size:5vw;}
+#corpo .container-botao .btn-primario{font-size:3vw;}
+
+/* ROTATIO DEPOIMENTOS */
+#corpo .depoimentos::before{padding-top:100%;}
+#corpo .depoimentos .carousel_depoimentos .fast_depoimentos{width:112%;margin:0 2vw}
+#corpo .depoimentos .fast_depoimentos .card{width:51%; border: 1px solid #111; position: relative;padding:3% 5% 2% 5%; border-radius:10px;margin-top:22%;}
+
+#corpo .depoimentos .fast_depoimentos .card .text-casal h3{font-size:2.5vw;}
+#corpo .depoimentos .fast_depoimentos .card .text-casal p{font-size:2vw;} 
+
+/* DOTS ROTATIVO MOBILE */
+.fast_depoimentos .owl-dots { display: block; position: relative; margin: 5% auto; width: 100%; text-align: center; }
+.fast_depoimentos .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
+.fast_depoimentos .owl-dots .owl-dot span { display: block; outline: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
+.fast_depoimentos .owl-dots .owl-dot:hover span, 
+.fast_depoimentos .owl-dots .owl-dot.active span { background-color: #8f8e8e; } 
+
+/* FAQ */
+.aniversario_faq{padding-bottom:3rem;}
+.aniversario_faq #aniversario_sanfona_faq h2{font-size:4vw;}
+#aniversario_sanfona_faq{width:85%}
+.aniversario_sanfona_titulo p {font-size:2vw;}
+.aniversario_sanfona_conteudo p{font-size:2vw}
+
 }
